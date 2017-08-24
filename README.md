@@ -2,7 +2,7 @@
 
 This package is devoted for detection of shape in binarized images. 
 
-All implementations were made using [Julia Language](www.julialang.org). In this stage we put for testing just a rough implementation of HT. 
+All implementations were made using [Julia Language](https://julialang.org). In this stage we put for testing just a rough implementation of HT. 
 
 For test all algorithm you need
 
