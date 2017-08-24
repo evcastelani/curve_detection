@@ -10,19 +10,22 @@ For test all algorithm you need
 * Install some dependencies
 
 For install all dependencies just type in Julia REPL:
- "Pkg.add("Images")"
- "Pkg.add("Colors")" 
- "Pkg.add("FixedPointNumbers")"
- "Pkg.add("ImageView")"
+
+ * ```Pkg.add("Images")```
+ * ```Pkg.add("Colors")```
+ * ```Pkg.add("FixedPointNumbers")```
+ * ```Pkg.add("ImageView")```
 
  After that, you need to include the setup file. For this, just type 
- "include("setup_tests.jl")".
+ ```include("setup_tests.jl")```.
 
  In order to run some problem type something like: 
- "run_prob("datafile-50-300-30-10","HT",20,true,false)", for artificial problems or
- "run_prob("moedas","HT",20,true,true)", for real problems.
+ 
+ ```run_prob("datafile-50-300-30-10","HT",20,true,false)```, for artificial problems or
 
- All images (real or artificial) are in /real_examples folder or /synthetic_example folder.
+ ```run_prob("moedas","HT",20,true,true)```, for real problems.
+
+ All images (real or artificial) are in ```/real_examples``` folder or ```/synthetic_example``` folder.
 
  This implementation was made by:
 
