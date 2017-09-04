@@ -1,5 +1,6 @@
 #including the methods file
 include("ht_method.jl")
+include("htgn_method.jl")
 #
 function run_prob(
         probname::String,
@@ -16,6 +17,9 @@ function run_prob(
         #probreal -> if true, a method to draw the solution will be used
         if method == "HT" || method== "ht"
                 htmain(probname,valdraw,probreal)
+        end
+        if method == "HTGN" || method== "htgn"
+                htgnmain(probname,valdraw,probreal,valp)
         end
 end
 
