@@ -1,6 +1,7 @@
 #including the methods file
 include("ht_method.jl")
 include("htgn_method.jl")
+include("gn_method.jl")
 #
 function run_prob(
         probname::String,
@@ -19,6 +20,9 @@ function run_prob(
                 htmain(probname,valdraw,probreal)
         end
         if method == "HTGN" || method== "htgn"
+                htgnmain(probname,valdraw,probreal,valp)
+        end
+        if method == "GN" || method== "gn"
                 htgnmain(probname,valdraw,probreal,valp)
         end
 end
