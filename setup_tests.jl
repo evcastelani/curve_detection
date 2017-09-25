@@ -23,7 +23,7 @@ function run_prob(
                 htgnmain(probname,valdraw,probreal,valp)
         end
         if method == "GN" || method== "gn"
-                htgnmain(probname,valdraw,probreal,valp)
+                gn(probname,valdraw,probreal,valp)
         end
 end
 
