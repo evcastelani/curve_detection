@@ -118,6 +118,9 @@ function gauss_newton(res,Fobli,Jacres,x0,M,dimM,p)
     b=J'*valres
 	while (norm(b)>ep)&&(it<100)
 		A=J'*J
+        if abs(det(A))<1.0e-5
+           A=A+1.0e-2*(I)
+        end
         s=A\(-b)
         x0=x0+s
         valFobli,ord= Fobli(x0,M,dimM,p)
