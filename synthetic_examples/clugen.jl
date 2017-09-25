@@ -58,9 +58,10 @@ function clustering_gen_circle(cirpoint,imsize,nout,nclus)
          imshow(img)
 end
 
-function creating_tests()
-    for i=1:1:10
-       clustering_gen_circle(50,300,30,i)
-    end
-end
+##function creating_tests()
+#    for i=1:1:10
+#       clustering_gen_circle(50,300,30,i)
+#    end
+#end
 #
+ clustering_gen_circle(50,300,30,7)
