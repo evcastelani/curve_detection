@@ -1,8 +1,13 @@
-# Algorithm for Curve Detection
+# Algorithm for Curve Detection (ACD-Package)
 
 This package is devoted for detection of shape in binarized images. 
+We highlight that this package is BETA QUALITY, just for academic purposes.
 
-All implementations were made using [Julia Language](https://julialang.org). In this stage we put for testing just a rough implementation of HT. 
+All implementations were made using [Julia Language](https://julialang.org) and in 
+this  stage the code can be very rough. There is three algorithms implemented: 
+* one based on Gauss-Newton Method
+* the HT for circle detection
+* a new hybrid algorithm based on Gauss-Newton and HT.
 
 For test all algorithm you need
 
@@ -23,9 +28,11 @@ For install all dependencies just type in Julia REPL:
  
  ```run_prob("datafile-50-300-30-10","HT",20,true,false)```, for artificial problems or
 
- ```run_prob("moedas","HT",20,true,true)```, for real problems.
+ ```run_prob("moedas","HT",20,true,true)```, for real problems. Change ```HT``` by ```GN``` or ```HTGN``` in order to test other methods.
 
  All images (real or artificial) are in ```/real_examples``` folder or ```/synthetic_example``` folder.
+
+ The folder ```/scripts``` contain some tests in artificial instances. 
 
  This implementation was made by:
 
