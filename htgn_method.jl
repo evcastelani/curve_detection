@@ -17,8 +17,8 @@ function htgnmain(filename::String,draw::Bool,real::Bool,p::Int)
     cd(curr_dir)
     #Parameters
     #size of acumulation array
-    m= 1000
-    n= 1000
+    m= 1200
+    n= 1200
     #initial radius
     r= 20.0
     #discretized angle
@@ -89,8 +89,8 @@ function htgn(FigCoord,m,n,r,ang,p)
         k=k+1
   end
   if r>=ri+nr #if this conditions holds means that acceleration fails
-	(cx2,cy2,rf2)=findindTens(Mvot)#aproveitamos os dados para calcular STH
-    rf2=ri+2*rf2
+        (cx2,cy2,rf2)=findindTens(Mvot)#aproveitamos os dados para calcular STH
+        rf2=ri+2*rf2
   end
   return cx2,cy2,rf2,k,itgn
 end
