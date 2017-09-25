@@ -38,9 +38,10 @@ function gn(filename::String,draw::Bool,real::Bool,p::Int) #this is the main pro
     re=rf[i,j]
     println("it tot = $itot")
     println(cex," ", cey," ",re," ",val)
+    println(maximum(abs.([cex-101.0,cey-42.0,abs(re)-25.0])))
     #ploting results
     if draw 
-        draw_solution(filename,A,cfx,cfy,rf,real)
+        draw_solution(filename,A,cex,cey,re,real)
     end        
 end
 
